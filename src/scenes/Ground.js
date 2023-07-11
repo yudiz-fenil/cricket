@@ -72,27 +72,29 @@ class Ground extends Phaser.Scene {
 	create() {
 
 		this.editorCreate();
+		this.oversDom = this.add.dom(961, 500).createFromCache('overForm');
+		this.oversDom.setScale(2);
 
-		const overs = this.add.dom(961, 500).createFromCache('overForm');
-		overs.setScale(2);
-		// this.loginContainer.add(overs);
+		const enterKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.ENTER);
+		enterKey.on('down', () => this.startGame());
+		this.btn_start.setInteractive().on('pointerup', () => this.startGame())
+	}
 
-		this.btn_start.setInteractive().on('pointerup', () => {
-			const sOvers = overs.getChildByID('overs').value;
-			var nSelectedOvers = Math.round(parseFloat(sOvers));;
-			nTotalOvers = nSelectedOvers || 5.0;
-			nCurrentOvers = 0;
-			nTotalBallsLeft = nTotalOvers * 6;
-			nTarget = (() => {
-				let x = Math.ceil(
-					Math.random() * (nTotalOvers * 10 + 10 - nTotalOvers * 10)
-				);
-				return x + nTotalOvers * 10;
-			})();
-			nRunsLeft = nTarget;
-			this.scene.stop("Ground");
-			this.scene.start("Level");
-		})
+	startGame() {
+		const sOvers = this.oversDom.getChildByID('overs').value;
+		var nSelectedOvers = Math.round(parseFloat(sOvers));;
+		nTotalOvers = nSelectedOvers || 5.0;
+		nCurrentOvers = 0;
+		nTotalBallsLeft = nTotalOvers * 6;
+		nTarget = (() => {
+			let x = Math.ceil(
+				Math.random() * (nTotalOvers * 10 + 10 - nTotalOvers * 10)
+			);
+			return x + nTotalOvers * 10;
+		})();
+		nRunsLeft = nTarget;
+		this.scene.stop("Ground");
+		this.scene.start("Level");
 	}
 
 	/* END-USER-CODE */
