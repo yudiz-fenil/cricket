@@ -31,7 +31,7 @@ class Level extends Phaser.Scene {
 		txtScore.setOrigin(0.5, 0.5);
 		txtScore.visible = false;
 		txtScore.text = "OUT";
-		txtScore.setStyle({ "align": "center", "backgroundColor": "", "color": "#ffffff", "fontFamily": "Verdana", "fontSize": "150px", "fontStyle": "bold", "stroke": "#000", "strokeThickness":3,"shadow.offsetX":5,"shadow.offsetY":5,"shadow.color": "#2f2f2f", "shadow.blur":5,"shadow.stroke":true,"shadow.fill":true});
+		txtScore.setStyle({ "align": "center", "backgroundColor": "", "color": "#ffffff", "fontFamily": "Verdana", "fontSize": "150px", "fontStyle": "bold", "stroke": "#000", "strokeThickness": 3, "shadow.offsetX": 5, "shadow.offsetY": 5, "shadow.color": "#2f2f2f", "shadow.blur": 5, "shadow.stroke": true, "shadow.fill": true });
 		body.add(txtScore);
 
 		// btnFrontShot
@@ -153,35 +153,35 @@ class Level extends Phaser.Scene {
 		const txtLabelTarget_1 = this.add.text(62, -20, "", {});
 		txtLabelTarget_1.setOrigin(1, 0.5);
 		txtLabelTarget_1.text = "Target:";
-		txtLabelTarget_1.setStyle({ "color": "#cce5f8ff", "fontFamily": "Verdana", "fontSize": "45px", "fontStyle": "bold", "stroke": "#1741a4ff", "strokeThickness":4,"shadow.offsetX":7,"shadow.offsetY":7,"shadow.color": "#234c91ff", "shadow.blur":7,"shadow.stroke":true});
+		txtLabelTarget_1.setStyle({ "color": "#cce5f8ff", "fontFamily": "Verdana", "fontSize": "45px", "fontStyle": "bold", "stroke": "#1741a4ff", "strokeThickness": 4, "shadow.offsetX": 7, "shadow.offsetY": 7, "shadow.color": "#234c91ff", "shadow.blur": 7, "shadow.stroke": true });
 		popup.add(txtLabelTarget_1);
 
 		// txtTarget_1
 		const txtTarget_1 = this.add.text(82, -16, "", {});
 		txtTarget_1.setOrigin(0, 0.5);
 		txtTarget_1.text = "30";
-		txtTarget_1.setStyle({ "color": "#cce5f8ff", "fontFamily": "Verdana", "fontSize": "45px", "fontStyle": "bold", "stroke": "#1741a4ff", "strokeThickness":4,"shadow.offsetX":7,"shadow.offsetY":7,"shadow.color": "#234c91ff", "shadow.blur":7,"shadow.stroke":true});
+		txtTarget_1.setStyle({ "color": "#cce5f8ff", "fontFamily": "Verdana", "fontSize": "45px", "fontStyle": "bold", "stroke": "#1741a4ff", "strokeThickness": 4, "shadow.offsetX": 7, "shadow.offsetY": 7, "shadow.color": "#234c91ff", "shadow.blur": 7, "shadow.stroke": true });
 		popup.add(txtTarget_1);
 
 		// txtLabelOver_1
 		const txtLabelOver_1 = this.add.text(62, 80, "", {});
 		txtLabelOver_1.setOrigin(1, 0.5);
 		txtLabelOver_1.text = "Overs:";
-		txtLabelOver_1.setStyle({ "color": "#cce5f8ff", "fontFamily": "Verdana", "fontSize": "45px", "fontStyle": "bold", "stroke": "#1741a4ff", "strokeThickness":4,"shadow.offsetX":7,"shadow.offsetY":7,"shadow.color": "#234c91ff", "shadow.blur":7,"shadow.stroke":true});
+		txtLabelOver_1.setStyle({ "color": "#cce5f8ff", "fontFamily": "Verdana", "fontSize": "45px", "fontStyle": "bold", "stroke": "#1741a4ff", "strokeThickness": 4, "shadow.offsetX": 7, "shadow.offsetY": 7, "shadow.color": "#234c91ff", "shadow.blur": 7, "shadow.stroke": true });
 		popup.add(txtLabelOver_1);
 
 		// txtOver_1
 		const txtOver_1 = this.add.text(82, 85, "", {});
 		txtOver_1.setOrigin(0, 0.5);
 		txtOver_1.text = "0";
-		txtOver_1.setStyle({ "color": "#cce5f8ff", "fontFamily": "Verdana", "fontSize": "45px", "fontStyle": "bold", "stroke": "#1741a4ff", "strokeThickness":4,"shadow.offsetX":7,"shadow.offsetY":7,"shadow.color": "#234c91ff", "shadow.blur":7,"shadow.stroke":true});
+		txtOver_1.setStyle({ "color": "#cce5f8ff", "fontFamily": "Verdana", "fontSize": "45px", "fontStyle": "bold", "stroke": "#1741a4ff", "strokeThickness": 4, "shadow.offsetX": 7, "shadow.offsetY": 7, "shadow.color": "#234c91ff", "shadow.blur": 7, "shadow.stroke": true });
 		popup.add(txtOver_1);
 
 		// labelStatus
 		const labelStatus = this.add.text(-1, -146, "", {});
 		labelStatus.setOrigin(0.5, 0.5);
 		labelStatus.text = "CONGRATULATIONS";
-		labelStatus.setStyle({ "color": "#cce5f8ff", "fontFamily": "Verdana", "fontSize": "50px", "fontStyle": "bold", "stroke": "#1741a4ff", "strokeThickness":4,"shadow.offsetX":7,"shadow.offsetY":7,"shadow.color": "#234c91ff", "shadow.blur":7,"shadow.stroke":true});
+		labelStatus.setStyle({ "color": "#cce5f8ff", "fontFamily": "Verdana", "fontSize": "50px", "fontStyle": "bold", "stroke": "#1741a4ff", "strokeThickness": 4, "shadow.offsetX": 7, "shadow.offsetY": 7, "shadow.color": "#234c91ff", "shadow.blur": 7, "shadow.stroke": true });
 		popup.add(labelStatus);
 
 		// btnPlayAgainContainer
@@ -198,7 +198,7 @@ class Level extends Phaser.Scene {
 		const btnPlayAganText = this.add.text(0, 0, "", {});
 		btnPlayAganText.setOrigin(0.5, 0.5);
 		btnPlayAganText.text = "Play Again";
-		btnPlayAganText.setStyle({ "align": "center", "color": "#ffffff", "fontFamily": "Verdana", "fontSize": "30px", "fontStyle": "bold", "stroke": "#1741a4ff", "strokeThickness":4,"shadow.offsetX":7,"shadow.offsetY":7,"shadow.color": "#234c91ff", "shadow.blur":7,"shadow.stroke":true});
+		btnPlayAganText.setStyle({ "align": "center", "color": "#ffffff", "fontFamily": "Verdana", "fontSize": "30px", "fontStyle": "bold", "stroke": "#1741a4ff", "strokeThickness": 4, "shadow.offsetX": 7, "shadow.offsetY": 7, "shadow.color": "#234c91ff", "shadow.blur": 7, "shadow.stroke": true });
 		btnPlayAgainContainer.add(btnPlayAganText);
 
 		// dashboard
@@ -230,63 +230,63 @@ class Level extends Phaser.Scene {
 		const lblCurrentOver = this.add.text(8, 0, "", {});
 		lblCurrentOver.setOrigin(0, 0.5);
 		lblCurrentOver.text = "Current Over :";
-		lblCurrentOver.setStyle({ "color": "#1741a4", "fontFamily": "Verdana", "fontSize": "30px", "fontStyle": "bold", "stroke": "#1741a4", "strokeThickness":2,"shadow.offsetX":3,"shadow.offsetY":3,"shadow.color": "#234c91", "shadow.blur":5,"shadow.stroke":true});
+		lblCurrentOver.setStyle({ "color": "#1741a4", "fontFamily": "Verdana", "fontSize": "30px", "fontStyle": "bold", "stroke": "#1741a4", "strokeThickness": 2, "shadow.offsetX": 3, "shadow.offsetY": 3, "shadow.color": "#234c91", "shadow.blur": 5, "shadow.stroke": true });
 		currentOverContainer.add(lblCurrentOver);
 
 		// lblCurrentOverRuns
 		const lblCurrentOverRuns = this.add.text(255, 0, "", {});
 		lblCurrentOverRuns.setOrigin(0, 0.5);
 		lblCurrentOverRuns.text = "W 0 1 2 3 4";
-		lblCurrentOverRuns.setStyle({ "color": "#1741a4", "fontFamily": "Verdana", "fontSize": "30px", "fontStyle": "bold", "stroke": "#1741a4", "strokeThickness":2,"shadow.offsetX":3,"shadow.offsetY":3,"shadow.color": "#234c91", "shadow.blur":5,"shadow.stroke":true});
+		lblCurrentOverRuns.setStyle({ "color": "#1741a4", "fontFamily": "Verdana", "fontSize": "30px", "fontStyle": "bold", "stroke": "#1741a4", "strokeThickness": 2, "shadow.offsetX": 3, "shadow.offsetY": 3, "shadow.color": "#234c91", "shadow.blur": 5, "shadow.stroke": true });
 		currentOverContainer.add(lblCurrentOverRuns);
 
 		// lblNeedRuns
 		const lblNeedRuns = this.add.text(0, 0, "", {});
 		lblNeedRuns.setOrigin(0.5, 0.5);
 		lblNeedRuns.text = "Need 20 runs in 20 balls";
-		lblNeedRuns.setStyle({ "color": "#1741a4", "fontFamily": "Verdana", "fontSize": "30px", "fontStyle": "bold", "stroke": "#1741a4", "strokeThickness":2,"shadow.offsetX":3,"shadow.offsetY":3,"shadow.color": "#234c91", "shadow.blur":5,"shadow.stroke":true});
+		lblNeedRuns.setStyle({ "color": "#1741a4", "fontFamily": "Verdana", "fontSize": "30px", "fontStyle": "bold", "stroke": "#1741a4", "strokeThickness": 2, "shadow.offsetX": 3, "shadow.offsetY": 3, "shadow.color": "#234c91", "shadow.blur": 5, "shadow.stroke": true });
 		dashboard.add(lblNeedRuns);
 
 		// txtLabelTarget
 		const txtLabelTarget = this.add.text(-96, -56, "", {});
 		txtLabelTarget.setOrigin(0, 0.5);
 		txtLabelTarget.text = "Target:";
-		txtLabelTarget.setStyle({ "color": "#1741a4", "fontFamily": "Verdana", "fontSize": "30px", "fontStyle": "bold", "stroke": "#1741a4", "strokeThickness":2,"shadow.offsetX":3,"shadow.offsetY":3,"shadow.color": "#1741a4", "shadow.blur":5,"shadow.stroke":true});
+		txtLabelTarget.setStyle({ "color": "#1741a4", "fontFamily": "Verdana", "fontSize": "30px", "fontStyle": "bold", "stroke": "#1741a4", "strokeThickness": 2, "shadow.offsetX": 3, "shadow.offsetY": 3, "shadow.color": "#1741a4", "shadow.blur": 5, "shadow.stroke": true });
 		dashboard.add(txtLabelTarget);
 
 		// txtTarget
 		const txtTarget = this.add.text(37, -53, "", {});
 		txtTarget.setOrigin(0, 0.5);
 		txtTarget.text = "30";
-		txtTarget.setStyle({ "color": "#1741a4", "fontFamily": "Verdana", "fontSize": "30px", "fontStyle": "bold", "stroke": "#1741a4", "strokeThickness":2,"shadow.offsetX":3,"shadow.offsetY":3,"shadow.color": "#1741a4", "shadow.blur":5,"shadow.stroke":true});
+		txtTarget.setStyle({ "color": "#1741a4", "fontFamily": "Verdana", "fontSize": "30px", "fontStyle": "bold", "stroke": "#1741a4", "strokeThickness": 2, "shadow.offsetX": 3, "shadow.offsetY": 3, "shadow.color": "#1741a4", "shadow.blur": 5, "shadow.stroke": true });
 		dashboard.add(txtTarget);
 
 		// txtLabelOver
 		const txtLabelOver = this.add.text(-905, -5, "", {});
 		txtLabelOver.setOrigin(0, 0.5);
 		txtLabelOver.text = "Overs:";
-		txtLabelOver.setStyle({ "color": "#1741a4", "fontFamily": "Verdana", "fontSize": "30px", "fontStyle": "bold", "stroke": "#1741a4", "strokeThickness":2,"shadow.offsetX":3,"shadow.offsetY":3,"shadow.color": "#1741a4", "shadow.blur":5,"shadow.stroke":true});
+		txtLabelOver.setStyle({ "color": "#1741a4", "fontFamily": "Verdana", "fontSize": "30px", "fontStyle": "bold", "stroke": "#1741a4", "strokeThickness": 2, "shadow.offsetX": 3, "shadow.offsetY": 3, "shadow.color": "#1741a4", "shadow.blur": 5, "shadow.stroke": true });
 		dashboard.add(txtLabelOver);
 
 		// txtOver
 		const txtOver = this.add.text(-783, -2, "", {});
 		txtOver.setOrigin(0, 0.5);
 		txtOver.text = "0";
-		txtOver.setStyle({ "color": "#1741a4", "fontFamily": "Verdana", "fontSize": "30px", "fontStyle": "bold", "stroke": "#1741a4", "strokeThickness":2,"shadow.offsetX":3,"shadow.offsetY":3,"shadow.color": "#1741a4", "shadow.blur":5,"shadow.stroke":true});
+		txtOver.setStyle({ "color": "#1741a4", "fontFamily": "Verdana", "fontSize": "30px", "fontStyle": "bold", "stroke": "#1741a4", "strokeThickness": 2, "shadow.offsetX": 3, "shadow.offsetY": 3, "shadow.color": "#1741a4", "shadow.blur": 5, "shadow.stroke": true });
 		dashboard.add(txtOver);
 
 		// txtLabelScore
 		const txtLabelScore = this.add.text(-903, -52, "", {});
 		txtLabelScore.setOrigin(0, 0.5);
 		txtLabelScore.text = "Score:";
-		txtLabelScore.setStyle({ "color": "#1741a4", "fontFamily": "Verdana", "fontSize": "30px", "fontStyle": "bold", "stroke": "#1741a4", "strokeThickness":2,"shadow.offsetX":3,"shadow.offsetY":3,"shadow.color": "#1741a4", "shadow.blur":5,"shadow.stroke":true});
+		txtLabelScore.setStyle({ "color": "#1741a4", "fontFamily": "Verdana", "fontSize": "30px", "fontStyle": "bold", "stroke": "#1741a4", "strokeThickness": 2, "shadow.offsetX": 3, "shadow.offsetY": 3, "shadow.color": "#1741a4", "shadow.blur": 5, "shadow.stroke": true });
 		dashboard.add(txtLabelScore);
 
 		// txtPlayerScore
 		const txtPlayerScore = this.add.text(-783, -49, "", {});
 		txtPlayerScore.setOrigin(0, 0.5);
 		txtPlayerScore.text = "0";
-		txtPlayerScore.setStyle({ "color": "#1741a4", "fontFamily": "Verdana", "fontSize": "30px", "fontStyle": "bold", "stroke": "#1741a4", "strokeThickness":2,"shadow.offsetX":3,"shadow.offsetY":3,"shadow.color": "#1741a4", "shadow.blur":5,"shadow.stroke":true});
+		txtPlayerScore.setStyle({ "color": "#1741a4", "fontFamily": "Verdana", "fontSize": "30px", "fontStyle": "bold", "stroke": "#1741a4", "strokeThickness": 2, "shadow.offsetX": 3, "shadow.offsetY": 3, "shadow.color": "#1741a4", "shadow.blur": 5, "shadow.stroke": true });
 		dashboard.add(txtPlayerScore);
 
 		this.txtScore = txtScore;
@@ -396,13 +396,12 @@ class Level extends Phaser.Scene {
 		this.editorCreate();
 
 		this.btnPlayAgain.setInteractive().on('pointerup', () => {
-			const selectedOvers = parseFloat(prompt("Please enter overs"));
 			nWickets = 0;
 			sCurrentOverRuns = "";
 			isNewGame = true;
 			nScore = 0;
 			nBallRun = 0;
-			nTotalOvers = selectedOvers || 5.0;
+			nTotalOvers = nSelectedOvers || 5.0;
 			nCurrentOvers = 0;
 			nTotalBallsLeft = nTotalOvers * 6;
 			nTarget = (() => {
@@ -489,7 +488,7 @@ class Level extends Phaser.Scene {
 		this.keeper.setPosition(937, 220);
 		this.keeper.anims.play("keeper-sit", true);
 
-		this.input.keyboard.addKey("SPACE").on("down", ()=>{
+		this.input.keyboard.addKey("SPACE").on("down", () => {
 			this.playShot("frontShot");
 		});
 
